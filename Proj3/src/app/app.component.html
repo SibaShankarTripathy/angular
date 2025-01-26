@@ -1,0 +1,8 @@
+<h3>Create of Addition and Deletion List</h3>
+<input type="text" placeholder="Enter Student Name" #stdName>
+<br/><br/>
+<button (click)="addStudName(stdName.value)">Register</button>
+
+<p>Student List....</p>
+<h4 *ngFor="let item of stdList">Student Id: {{item.id}} --- Student Name: {{item.name}} <button
+    (click)="removeName(item.id)">Remove</button></h4>
